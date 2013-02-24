@@ -1,0 +1,92 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+
+// Variables
+
+
+//Compass method
+
+@include font-face("blokk", font-files("fonts/BLOKKRegular.ttf"));
+
+
+// Css3 method
+// @font-face {
+// 	font-family: blokk;
+// 	src: url('fonts/BLOKKRegular.ttf');
+// }
+
+body {
+	font-size: 100%;
+	background-color: grey;
+}
+
+#page {
+	margin: 0 auto;
+	width: 960px;
+	background-color: white;
+}
+
+.wrapper {
+	padding: 10px;
+	margin: 0 auto;
+	@include pie-clearfix;
+}
+
+// Navigation
+
+nav ul {
+	@include horizontal-list;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+// Content
+
+aside {
+	float: left;
+	width: 33%;
+	div {
+		padding: 10px;
+	}
+}
+
+// Typography
+
+h1 {
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+h4 {
+	@extend h3;
+	font-weight: normal;	
+}
+
+small {
+	font-size: .8em;
+}
+
+p {
+	font-size: 1em;
+	font-family: blokk;
+	margin-bottom: 10px;
+}
