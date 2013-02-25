@@ -85,68 +85,52 @@ body {
     clear: both; }
 
 /* line 44, ../sass/screen.scss */
-nav ul {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1; }
-  /* line 60, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-  nav ul li {
-    list-style-image: none;
-    list-style-type: none;
-    margin-left: 0;
-    white-space: nowrap;
-    display: inline;
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px; }
-    /* line 48, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-    nav ul li:first-child, nav ul li.first {
-      padding-left: 0; }
-    /* line 49, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-    nav ul li:last-child {
-      padding-right: 0; }
-    /* line 50, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
-    nav ul li.last {
-      padding-right: 0; }
-
-/* line 48, ../sass/screen.scss */
-nav a {
+#header nav ul a {
   text-decoration: none; }
 
-/* line 54, ../sass/screen.scss */
+/* line 49, ../sass/screen.scss */
+#header nav li {
+  display: block;
+  float: left; }
+/* line 53, ../sass/screen.scss */
+#header a {
+  text-decoration: none; }
+/* line 56, ../sass/screen.scss */
+#header h1 {
+  font-size: 1.4em; }
+
+/* line 63, ../sass/screen.scss */
 aside {
   float: left;
   width: 33%; }
-  /* line 57, ../sass/screen.scss */
+  /* line 66, ../sass/screen.scss */
   aside div {
     padding: 10px; }
 
-/* line 64, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 h1 {
   font-size: 1.6em;
   font-weight: bold; }
 
-/* line 69, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 h2 {
   font-size: 1.4em;
   font-weight: bold; }
 
-/* line 74, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 h3, h4 {
   font-size: 1.2em;
   font-weight: bold; }
 
-/* line 79, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h4 {
   font-weight: normal; }
 
-/* line 84, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 small {
   font-size: .8em; }
 
-/* line 88, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 p {
   font-size: 1em;
   font-family: blokk;

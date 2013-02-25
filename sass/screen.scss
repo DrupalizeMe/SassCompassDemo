@@ -41,12 +41,21 @@ body {
 
 // Navigation
 
-nav ul {
-	@include horizontal-list;
+#header nav ul a {
+	text-decoration: none;
 }
 
-nav a {
-	text-decoration: none;
+#header {
+	nav li {
+		display: block;
+		float: left;	
+	}
+	a {
+		text-decoration: none;
+	}
+	h1 {
+	font-size: 1.4em;
+	}
 }
 
 // Content
