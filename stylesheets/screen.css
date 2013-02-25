@@ -127,7 +127,22 @@ aside div {
   padding: 10px;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
+.box, .info-box, .highlight-box {
+  background: #ddd;
+}
+
+/* line 89, ../sass/screen.scss */
+.info-box, .highlight-box {
+  font-style: italic;
+}
+
+/* line 94, ../sass/screen.scss */
+.highlight-box {
+  color: red;
+}
+
+/* line 101, ../sass/screen.scss */
 h1 {
   font-family: Arial;
   font-size: 1.6em;
@@ -136,7 +151,7 @@ h1 {
   margin-top: 9px;
 }
 
-/* line 92, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 h2 {
   font-family: Arial;
   font-size: 1.4em;
@@ -144,7 +159,7 @@ h2 {
   color: black;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 h3, h4 {
   font-family: Arial;
   font-size: 1.2em;
@@ -152,23 +167,23 @@ h3, h4 {
   color: black;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 h4 {
   font-weight: normal;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 small {
   font-size: .8em;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 p {
   font-size: 1em;
   font-family: blokk;
   margin-bottom: 10px;
 }
-/* line 113, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 p a.ext-link {
   background: url(../img/external.png) top right no-repeat;
   padding-right: 10px;

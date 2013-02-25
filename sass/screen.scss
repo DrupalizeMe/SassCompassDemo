@@ -82,6 +82,20 @@ aside {
 	}
 }
 
+.box {
+	background: #ddd;
+}
+
+.info-box {
+	@extend .box;
+	font-style: italic;
+}
+
+.highlight-box {
+	@extend .info-box;
+	color: red;
+}
+
 // Typography
 
 h1 {
