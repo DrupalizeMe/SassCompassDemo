@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,117 +21,155 @@ time, mark, audio, video {
   border: 0;
   font: inherit;
   font-size: 100%;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
-/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1; }
+  line-height: 1;
+}
 
-/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
-/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
-/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
-/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none; }
-  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+  quotes: none;
+}
+/* line 103, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
 
-/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none; }
+  border: none;
+}
 
-/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
+  display: block;
+}
 
 @font-face {
   font-family: "blokk";
-  src: url('/fonts/fonts/BLOKKRegular.ttf') format('truetype'); }
+  src: url('/fonts/fonts/BLOKKRegular.ttf') format('truetype');
+}
 
-/* line 25, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 body {
   font-size: 100%;
-  background-color: grey; }
+  background-color: grey;
+}
 
-/* line 30, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 #page {
   margin: 0 auto;
   width: 960px;
-  background-color: white; }
+  background-color: white;
+}
 
-/* line 36, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .wrapper {
   padding: 10px;
   margin: 0 auto;
-  *zoom: 1; }
-  /* line 38, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .wrapper:after {
-    content: "";
-    display: table;
-    clear: both; }
+  *zoom: 1;
+}
+/* line 38, ../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 44, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #header nav ul a {
-  text-decoration: none; }
-
-/* line 49, ../sass/screen.scss */
-#header nav li {
-  display: block;
-  float: left; }
-/* line 53, ../sass/screen.scss */
-#header a {
-  text-decoration: none; }
-/* line 56, ../sass/screen.scss */
-#header h1 {
-  font-size: 1.4em; }
+  text-decoration: none;
+}
 
 /* line 63, ../sass/screen.scss */
+#header nav li {
+  display: block;
+  float: left;
+}
+/* line 67, ../sass/screen.scss */
+#header a {
+  text-decoration: none;
+}
+/* line 70, ../sass/screen.scss */
+#header h1 {
+  font-size: 1.4em;
+}
+
+/* line 77, ../sass/screen.scss */
 aside {
   float: left;
-  width: 33%; }
-  /* line 66, ../sass/screen.scss */
-  aside div {
-    padding: 10px; }
+  width: 33%;
+}
+/* line 80, ../sass/screen.scss */
+aside div {
+  padding: 10px;
+}
 
-/* line 73, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 h1 {
+  font-family: Arial;
   font-size: 1.6em;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #ea068a;
+  margin-top: 9px;
+}
 
-/* line 78, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 h2 {
+  font-family: Arial;
   font-size: 1.4em;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black;
+}
 
-/* line 83, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 h3, h4 {
+  font-family: Arial;
   font-size: 1.2em;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black;
+}
 
-/* line 88, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 h4 {
-  font-weight: normal; }
+  font-weight: normal;
+}
 
-/* line 93, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 small {
-  font-size: .8em; }
+  font-size: .8em;
+}
 
-/* line 97, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 p {
   font-size: 1em;
   font-family: blokk;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
+/* line 113, ../sass/screen.scss */
+p a.ext-link {
+  background: url(../img/external.png) top right no-repeat;
+  padding-right: 10px;
+}

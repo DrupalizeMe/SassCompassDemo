@@ -9,7 +9,21 @@
 @import "compass/utilities";
 
 // Variables
+$dkgreen: #037533;
+$margin: 5px;
+$margin-top: $margin + 8px/2px;
+$ltgreen: $dkgreen * 2;
+$external: ext-link;
 
+// Mixins
+@mixin large-text($font-size, $color: #000) {
+	font: {
+		family: Arial;
+		size: $font-size;
+		weight: bold;
+	}
+	color: $color;
+}
 
 //Compass method
 
@@ -71,18 +85,16 @@ aside {
 // Typography
 
 h1 {
-	font-size: 1.6em;
-	font-weight: bold;
+	@include large-text(1.6em, complement($ltgreen));
+	margin-top: $margin-top;
 }
 
 h2 {
-	font-size: 1.4em;
-	font-weight: bold;
+	@include large-text(1.4em);
 }
 
 h3 {
-	font-size: 1.2em;
-	font-weight: bold;
+	@include large-text(1.2em);
 }
 
 h4 {
@@ -98,4 +110,11 @@ p {
 	font-size: 1em;
 	font-family: blokk;
 	margin-bottom: 10px;
+	a.#{$external} {
+		background: url(../img/external.png) top right no-repeat;
+        padding-right: 10px;
+	}
 }
+
+
+
