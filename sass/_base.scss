@@ -3,4 +3,31 @@
 @import "compass/typography";
 @import "compass/utilities";
 
+
+// Variables
+$dkgreen: #037533;
+$margin: 5px;
+$margin-top: $margin + 8px/2px;
+$ltgreen: $dkgreen * 2;
+$external: ext-link;
+
+// Mixins
+@mixin large-text($font-size, $color: #000) {
+	font: {
+		family: Arial;
+		size: $font-size;
+		weight: bold;
+	}
+	color: $color;
+}
+
+//Compass method
+
 @include font-face("blokk", font-files("fonts/BLOKKRegular.ttf"));
+
+
+// Css3 method
+// @font-face {
+// 	font-family: blokk;
+// 	src: url('fonts/BLOKKRegular.ttf');
+// }

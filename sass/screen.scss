@@ -1,44 +1,10 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/typography";
-@import "compass/utilities";
-
-// Variables
-$dkgreen: #037533;
-$margin: 5px;
-$margin-top: $margin + 8px/2px;
-$ltgreen: $dkgreen * 2;
-$external: ext-link;
-
-// Mixins
-@mixin large-text($font-size, $color: #000) {
-	font: {
-		family: Arial;
-		size: $font-size;
-		weight: bold;
-	}
-	color: $color;
-}
-
-//Compass method
-
-@include font-face("blokk", font-files("fonts/BLOKKRegular.ttf"));
-
-
-// Css3 method
-// @font-face {
-// 	font-family: blokk;
-// 	src: url('fonts/BLOKKRegular.ttf');
-// }
+@import "base";
+@import "typography";
+@import "header";
 
 body {
 	font-size: 100%;
-	background-color: grey;
+	background-color: $dkgreen;
 }
 
 #page {
@@ -60,9 +26,8 @@ body {
 }
 
 #header {
-	nav li {
-		display: block;
-		float: left;	
+	nav ul {
+		@include horizontal-list;
 	}
 	a {
 		text-decoration: none;
@@ -96,39 +61,7 @@ aside {
 	color: red;
 }
 
-// Typography
 
-h1 {
-	@include large-text(1.6em, complement($ltgreen));
-	margin-top: $margin-top;
-}
-
-h2 {
-	@include large-text(1.4em);
-}
-
-h3 {
-	@include large-text(1.2em);
-}
-
-h4 {
-	@extend h3;
-	font-weight: normal;	
-}
-
-small {
-	font-size: .8em;
-}
-
-p {
-	font-size: 1em;
-	font-family: blokk;
-	margin-bottom: 10px;
-	a.#{$external} {
-		background: url(../img/external.png) top right no-repeat;
-        padding-right: 10px;
-	}
-}
 
 
 
